@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: lime;
+    background: linear-gradient(90deg,rgb(41, 133, 29) 0%, rgb(28, 169, 26) 40%,lime 100%);
+    color: black;
+}
+#header{
+    width: 100%;
+    height: 57.938rem;
+    background-image: url(image/1.png);
+    background-size: 700px;
+    background-position: 170px;
+    background-repeat: no-repeat;
+}
+.container-header{
+    padding: 1.25rem 5%;
+}
+.text{
+    margin-left: 47%;
+    margin-top: 15%;
+    position: relative;
+    display: block;
+}
+.think{
+    position: absolute;
+}
+.think img{
+    width: 1000px;
+    position: relative;
+}
+.my-profile{
+    position:absolute;
+    display:block;
+    font-size: 25px ;/* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
+    top: 180px;
+    left:12%; /* css กำหนดชิดด้านบน  */
+    z-index:999;
+    color: #e8e4e4;
+    text-align: center;
+}
+.logo{
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+nav ul{
+    margin-left: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 10px ;
+}
+nav ul li a{
+    padding: 2px;
+    color:black;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    border: px black solid;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px 1px orangered;
+}
+/*me*/
+#me{
+    width: 100%;
+    height: 57.938rem;
+    padding: 100px 0;
+    background-image: url(image/2.png);
+    background-size: 700px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.container-me{
+    margin-top: 100px;
+    margin-left: 10%;
+    flex-basis: 32%;
+    width: 1000px;
+}
+.about-me{
+    flex-basis: 60%;
+    margin-top: 20px;
+}
+.about-me p{
+    font-size: 28px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 5px 5px 5px 1px orangered;
+    padding: 5px;
+}.history{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.history-2{
+    margin-left: 50px;
+}
+.history span{
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.history ul li{
+    list-style: none;
+    margin: 20px 0;
+}
+/*activities*/
+#activities{
+    width: 100%;
+    height: 57.938rem;
+    padding: 100px 0;
+}
+.sub-title-act{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 5px 5px 5px 1px orangered;
+    padding: 5px;
+    margin-top: 200px;
+    margin-left: 10%;
+}
+.activities-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.activities-list2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.activities-list3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(117,25,9,0.4),  rgba(241,142,0,1));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}.layer h2{
+    font-weight: 500px;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color:rgb(117,25,9);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+div.name-tap{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.box-tap1{
+    width: 25%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    font-size: 22px;
+}
+.box-tap{
+    width: 25%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 22px;
+}
+/*contact*/
+#contact{
+    background-image: url(image/ชี้.png);
+    background-size: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+footer{
+    position:relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  orangered;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color:#fff;
+    text-decoration: none;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.end{
+    color: black;
+}

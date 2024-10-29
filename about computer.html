@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Computer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'itim', cursive;
+        }
+        body{
+            background: lime;
+            background: linear-gradient(90deg,rgb(41, 133, 29) 0%, rgb(28, 169, 26) 40%,lime 100%);
+            color: black;
+        }
+        h1.header{
+            text-align: center;
+            font-size: 60px;
+        }
+        div.image{
+            margin-left: 0.5%;
+            margin-top: 4%;
+        }
+        a{
+            margin-left: 45px;
+        }
+        img{
+            box-shadow: 5px 5px 5px 1px orangered;
+            border-radius: 10px;
+        }
+        div.text{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0.5%;
+        }
+        .text p{
+            font-size: 18px;
+        }
+        .box{
+            border: 1px solid;
+            width: 380px;
+            height: 210px;
+            padding: 10px;
+            background-color: orange ;
+            margin-left: 45px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .back{
+            display: block;
+            margin: 20px auto;
+            padding-top: 10px;
+            width: 100px;
+            height: 25px;
+            border: 3px solid orangered;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            transition: background 0.4s;
+        }
+        .back:hover{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">About Computer</h1>
+    <div class="image">
+        <a class="img" id="img1" ><img src="image/learn.jpg" alt="" width="400px"></a>
+        <a class="img" id="img2" ><img src="image/คอม1.jpg" alt="" width="400px"></a>
+        <a class="img" id="img3" ><img src="image/คอม2.jpg" alt="" width="400px"></a>
+        <a class="img" id="img4" ><img src="image/คอม3.jpg" alt="" width="400px"></a>
+    </div>
+    <div class="text">
+        <div class="box">
+            <h1>Learn web development</h1>
+            <p>It was my self-development. I learned web development online, which made me familiar with HTML5, CSS3, and JavaScript. I also developed a self-introduction website.</p>
+        </div>
+        <div class="box">
+            <h1>WorkShop markdown language</h1>
+            <p>It was an activity that allowed me to try my hand at it and learn about how the markdown language works.</p>
+        </div>
+        <div class="box">
+            <h1>Engineering Open House</h1>
+            <p>It allowed me to learn about the curriculum, the work, and also talk to seniors about further studies at university.</p>
+        </div>
+        <div class="box">
+            <h1>K-Engineering world tour and WorkShop</h1>
+            <p>This allowed me to learn about how computer engineering works, meet and talk with professors in the faculty, and learn about the curriculum and what to study.</p>
+        </div>
+    </div>
+    <a href="index.html" class="back">BACK</a>
+</body>
+</html>
